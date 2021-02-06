@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1ab36f0c-ccda-469e-aa39-ba98b0ae65df",
+    "name": "ATS",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "240b2f69-00ee-47d5-9125-7dfab64f588f",
+    "name": "Corvette",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "c52c2652-0a77-4958-979b-3445d796f503",
+    "name": "Mercielago",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  }
+]
