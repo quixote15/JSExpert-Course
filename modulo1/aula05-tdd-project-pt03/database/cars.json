@@ -1,0 +1,23 @@
+[
+  {
+    "id": "d60dd8d1-f7fc-48c0-a91d-16f8ce1e15b2",
+    "name": "Ranchero",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "3f4d8397-732b-4bfc-adb0-ad47b1dc2d34",
+    "name": "Mustang",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "5594c830-cffe-4efd-a761-b5c06088437c",
+    "name": "2",
+    "releaseYear": 2021,
+    "available": true,
+    "gasAvailable": true
+  }
+]
