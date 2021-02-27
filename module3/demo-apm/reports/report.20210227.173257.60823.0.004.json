@@ -1,0 +1,684 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "SIGUSR2",
+    "trigger": "Signal",
+    "filename": "report.20210227.173257.60823.0.004.json",
+    "dumpEventTime": "2021-02-27T17:32:57Z",
+    "dumpEventTimeStamp": "1614457977550",
+    "processId": 60823,
+    "threadId": 0,
+    "cwd": "/Volumes/SSDAYO/workspace/JSExpert/module3/demo-apm",
+    "commandLine": [
+      "node",
+      "--experimental-json-modules",
+      "--experimental-top-level-await",
+      "api/index.js"
+    ],
+    "nodejsVersion": "v14.15.4",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "14.15.4",
+      "v8": "8.4.371.19-node.17",
+      "uv": "1.40.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.9",
+      "ares": "1.16.1",
+      "modules": "83",
+      "nghttp2": "1.41.0",
+      "napi": "7",
+      "llhttp": "2.1.3",
+      "openssl": "1.1.1i",
+      "cldr": "37.0",
+      "icu": "67.1",
+      "tz": "2020a",
+      "unicode": "13.0"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Fermium",
+      "headersUrl": "https://nodejs.org/download/release/v14.15.4/node-v14.15.4-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v14.15.4/node-v14.15.4.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "20.1.0",
+    "osVersion": "Darwin Kernel Version 20.1.0: Sat Oct 31 00:07:11 PDT 2020; root:xnu-7195.50.7~2/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-4260U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 48366640,
+        "nice": 0,
+        "sys": 56476690,
+        "idle": 107107040,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4260U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 23508510,
+        "nice": 0,
+        "sys": 20020360,
+        "idle": 168420580,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4260U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 46325300,
+        "nice": 0,
+        "sys": 51776550,
+        "idle": 113847600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4260U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 21909500,
+        "nice": 0,
+        "sys": 17512530,
+        "idle": 172527420,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "2c:f0:ee:21:92:66",
+        "address": "fe80::8f4:5935:164b:af07",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "2c:f0:ee:21:92:66",
+        "address": "192.168.0.106",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "12:98:ed:bb:90:93",
+        "address": "fe80::1098:edff:febb:9093",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 9
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "12:98:ed:bb:90:93",
+        "address": "fe80::1098:edff:febb:9093",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1a3c:d853:87d5:f9c3",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::98d8:4e81:c166:e620",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "utun2",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::5650:f749:fcc3:30ec",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 13
+      }
+    ],
+    "host": "Ayo-MacBook-Air.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ],
+    "errorProperties": {
+    }
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000100118e70",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::Object>) [/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node]"
+    },
+    {
+      "pc": "0x000000010011fce4",
+      "symbol": "report::WriteReport(v8::FunctionCallbackInfo<v8::Value> const&) [/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node]"
+    },
+    {
+      "pc": "0x000000010025a4e8",
+      "symbol": "v8::internal::FunctionCallbackArguments::Call(v8::internal::CallHandlerInfo) [/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node]"
+    },
+    {
+      "pc": "0x0000000100259a7c",
+      "symbol": "v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments) [/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node]"
+    },
+    {
+      "pc": "0x00000001002591a2",
+      "symbol": "v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*) [/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node]"
+    },
+    {
+      "pc": "0x0000000100a7a359",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_BuiltinExit [/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node]"
+    },
+    {
+      "pc": "0x0000000100a13622",
+      "symbol": "Builtins_InterpreterEntryTrampoline [/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 5046272,
+    "totalCommittedMemory": 3589528,
+    "usedMemory": 3381128,
+    "availableMemory": 2195067688,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 151552,
+        "committedMemory": 150680,
+        "capacity": 150392,
+        "used": 150392,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 82656,
+        "capacity": 1047424,
+        "used": 81504,
+        "available": 965920
+      },
+      "old_space": {
+        "memorySize": 2506752,
+        "committedMemory": 2417288,
+        "capacity": 2409936,
+        "used": 2397568,
+        "available": 12368
+      },
+      "code_space": {
+        "memorySize": 360448,
+        "committedMemory": 117472,
+        "capacity": 101728,
+        "used": 96096,
+        "available": 5632
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 370872,
+        "capacity": 526736,
+        "used": 259416,
+        "available": 267320
+      },
+      "large_object_space": {
+        "memorySize": 401408,
+        "committedMemory": 401408,
+        "capacity": 393272,
+        "used": 393272,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2880,
+        "used": 2880,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 0.228867,
+    "kernelCpuSeconds": 0.067143,
+    "cpuConsumptionPercent": 0.255181,
+    "maxRss": 34078720000,
+    "pageFaults": {
+      "IORequired": 302,
+      "IONotRequired": 9841
+    },
+    "fsActivity": {
+      "reads": 1,
+      "writes": 11
+    }
+  },
+  "libuv": [
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000105007140"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000001034efab0"
+    },
+    {
+      "type": "timer",
+      "is_active": false,
+      "is_referenced": false,
+      "address": "0x0000000106809d00",
+      "repeat": 0,
+      "firesInMsFromNow": -91263,
+      "expired": true
+    },
+    {
+      "type": "check",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000106809d98"
+    },
+    {
+      "type": "idle",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x0000000106809e10"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000106809e88"
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x00000001052354f0",
+      "width": 138,
+      "height": 22,
+      "fd": 22,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "signal",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000001052317e8",
+      "signum": 28,
+      "signal": "SIGWINCH"
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x000000010523c3b0",
+      "width": 138,
+      "height": 22,
+      "fd": 20,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "signal",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000001052398d8",
+      "signum": 31,
+      "signal": "SIGUSR2"
+    },
+    {
+      "type": "tcp",
+      "is_active": true,
+      "is_referenced": true,
+      "address": "0x0000000105245670",
+      "localEndpoint": {
+        "host": "::",
+        "port": 3000
+      },
+      "remoteEndpoint": null,
+      "sendBufferSize": 131072,
+      "recvBufferSize": 131072,
+      "fd": 21,
+      "writeQueueSize": 0,
+      "readable": false,
+      "writable": false
+    },
+    {
+      "type": "loop",
+      "is_active": true,
+      "address": "0x00000001034f5db0"
+    }
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "NVM_INC": "/Users/ayodev/.nvm/versions/node/v14.15.4/include/node",
+    "npm_config_dry_run": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_save_dev": "",
+    "npm_config_browser": "",
+    "npm_config_commit_hooks": "true",
+    "npm_config_only": "",
+    "npm_config_viewer": "man",
+    "npm_config_also": "",
+    "TERM_PROGRAM": "vscode",
+    "npm_config_rollback": "true",
+    "npm_config_sign_git_commit": "",
+    "npm_config_audit": "true",
+    "npm_config_usage": "",
+    "NODE": "/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node",
+    "E": "/Volumes/SSDAYO",
+    "NVM_CD_FLAGS": "-q",
+    "GEM_HOME": "/Users/ayodev/.gem",
+    "INIT_CWD": "/Volumes/SSDAYO/workspace/JSExpert/module3/demo-apm",
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh",
+    "npm_config_globalignorefile": "/Users/ayodev/.nvm/versions/node/v14.15.4/etc/npmignore",
+    "npm_config_init_author_url": "",
+    "npm_config_maxsockets": "50",
+    "npm_config_shell": "/bin/zsh",
+    "TMPDIR": "/var/folders/d8/3_3gkjds18zff8nxgw2tz7ch0000gp/T/",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_parseable": "",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_init_license": "ISC",
+    "npm_config_timing": "",
+    "TERM_PROGRAM_VERSION": "1.53.2",
+    "npm_package_dependencies_debug": "^4.3.1",
+    "npm_config_if_present": "",
+    "ANDROID_SDK_ROOT": "/Volumes/SSDAYO/Android/sdk",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "npm_package_dependencies_uuid": "^8.3.2",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_init_author_email": "",
+    "npm_config_sign_git_tag": "",
+    "npm_config_cert": "",
+    "npm_config_git_tag_version": "true",
+    "npm_config_local_address": "",
+    "npm_config_long": "",
+    "npm_config_preid": "",
+    "npm_config_fetch_retries": "2",
+    "npm_config_noproxy": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_key": "",
+    "npm_config_message": "%s",
+    "npm_config_versions": "",
+    "NVM_DIR": "/Users/ayodev/.nvm",
+    "USER": "ayodev",
+    "npm_package_description": "",
+    "npm_package_license": "ISC",
+    "COMMAND_MODE": "unix2003",
+    "npm_config_globalconfig": "/Users/ayodev/.nvm/versions/node/v14.15.4/etc/npmrc",
+    "npm_config_always_auth": "",
+    "npm_config_logs_max": "10",
+    "npm_config_prefer_online": "",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.TfAvXr6qUE/Listeners",
+    "__CF_USER_TEXT_ENCODING": "0x1F6:0x0:0x47",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_global_style": "",
+    "npm_execpath": "/Users/ayodev/.nvm/versions/node/v14.15.4/lib/node_modules/npm/bin/npm-cli.js",
+    "npm_config_cafile": "",
+    "npm_config_update_notifier": "true",
+    "npm_config_audit_level": "low",
+    "npm_config_heading": "npm",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_offline": "",
+    "npm_config_read_only": "",
+    "npm_config_searchlimit": "20",
+    "PATH": "/Volumes/SSDAYO/workspace/JSExpert/module3/demo-apm/node_modules/.bin:/Users/ayodev/.nvm/versions/node/v14.15.4/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Volumes/SSDAYO/workspace/JSExpert/module3/demo-apm/node_modules/.bin:/Users/ayodev/.nvm/versions/node/v14.15.4/bin:/Users/ayodev/.nvm/versions/node/v11.15.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/opt/X11/bin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Users/ayodev/.nvm/versions/node/v11.15.0/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/opt/curl/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/Volumes/SSDAYO/Android/sdk/platform-tools/",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"start\"],\"original\":[\"start\"]}",
+    "npm_config_access": "",
+    "npm_config_json": "",
+    "npm_config_allow_same_version": "",
+    "_": "/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node",
+    "npm_config_description": "true",
+    "npm_config_engine_strict": "",
+    "npm_config_https_proxy": "",
+    "__CFBundleIdentifier": "com.microsoft.VSCode",
+    "npm_package_author": "",
+    "npm_config_init_module": "/Users/ayodev/.npm-init.js",
+    "npm_config_userconfig": "/Users/ayodev/.npmrc",
+    "PWD": "/Volumes/SSDAYO/workspace/JSExpert/module3/demo-apm",
+    "npm_config_cidr": "",
+    "JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home",
+    "npm_config_node_version": "14.15.4",
+    "npm_config_user": "502",
+    "npm_lifecycle_event": "start",
+    "LANG": "pt_BR.UTF-8",
+    "ANDROID_SDK": "/Volumes/SSDAYO/Android/sdk",
+    "npm_package_name": "demo-apm",
+    "npm_config_auth_type": "legacy",
+    "npm_config_editor": "vi",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_save": "true",
+    "npm_config_script_shell": "",
+    "npm_config_tag": "latest",
+    "npm_package_scripts_start": "DEBUG=app:* nodemon --exec node --experimental-json-modules --experimental-top-level-await api/index.js",
+    "npm_config_before": "",
+    "npm_config_global": "",
+    "npm_config_progress": "true",
+    "XPC_FLAGS": "0x0",
+    "npm_config_ham_it_up": "",
+    "npm_config_optional": "true",
+    "npm_config_searchstaleness": "900",
+    "npm_config_bin_links": "true",
+    "npm_config_force": "",
+    "npm_config_save_prod": "",
+    "npm_config_searchopts": "",
+    "npm_package_main": "index.js",
+    "npm_config_depth": "Infinity",
+    "npm_config_node_gyp": "/Users/ayodev/.nvm/versions/node/v14.15.4/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "XPC_SERVICE_NAME": "0",
+    "npm_package_version": "1.0.0",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_unicode": "true",
+    "SHLVL": "3",
+    "HOME": "/Users/ayodev",
+    "npm_package_type": "module",
+    "VSCODE_GIT_ASKPASS_MAIN": "/Volumes/SSDAYO/Applications/Visual Studio Code 2.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_ca": "",
+    "npm_config_loglevel": "notice",
+    "npm_config_save_prefix": "^",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_sso_type": "oauth",
+    "npm_config_strict_ssl": "true",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_dev": "",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_group": "20",
+    "npm_config_save_exact": "",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_prefer_offline": "",
+    "npm_config_version": "",
+    "npm_config_cache_min": "10",
+    "npm_config_otp": "",
+    "LOGNAME": "ayodev",
+    "npm_config_cache": "/Users/ayodev/.npm",
+    "npm_config_searchexclude": "",
+    "npm_config_color": "true",
+    "npm_lifecycle_script": "DEBUG=app:* nodemon --exec node --experimental-json-modules --experimental-top-level-await api/index.js",
+    "VSCODE_GIT_IPC_HANDLE": "/var/folders/d8/3_3gkjds18zff8nxgw2tz7ch0000gp/T/vscode-git-37ebd79a0b.sock",
+    "npm_package_nodemonConfig_ignore_0": "report*",
+    "npm_config_package_lock": "true",
+    "npm_config_proxy": "",
+    "npm_config_fund": "true",
+    "npm_config_package_lock_only": "",
+    "NVM_BIN": "/Users/ayodev/.nvm/versions/node/v14.15.4/bin",
+    "ADB": "/Users/your_username/Library/Android/sdk/platform-tools/adb",
+    "npm_config_save_optional": "",
+    "npm_config_user_agent": "npm/6.14.10 node/v14.15.4 darwin x64",
+    "npm_config_ignore_scripts": "",
+    "VSCODE_GIT_ASKPASS_NODE": "/Volumes/SSDAYO/Applications/Visual Studio Code 2.app/Contents/Frameworks/Code Helper (Renderer).app/Contents/MacOS/Code Helper (Renderer)",
+    "GIT_ASKPASS": "/Volumes/SSDAYO/Applications/Visual Studio Code 2.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_production": "",
+    "npm_config_save_bundle": "",
+    "npm_config_send_metrics": "",
+    "EHOME": "/Volumes/SSDAYO",
+    "npm_package_scripts_test_agent": "mkdir -p reports && DEBUG=agent:* nodemon --exec node --experimental-json-modules --experimental-top-level-await agent/**.test.js",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_node_options": "",
+    "npm_config_umask": "0022",
+    "npm_config_scope": "",
+    "npm_config_git": "git",
+    "npm_config_init_author_name": "",
+    "DEBUG": "app:*",
+    "npm_package_scripts_test_app": "DEBUG=app:* nodemon --exec node --experimental-json-modules --experimental-top-level-await api/**.test.js",
+    "npm_package_devDependencies_nodemon": "^2.0.7",
+    "npm_config_onload_script": "",
+    "npm_config_tmp": "/var/folders/d8/3_3gkjds18zff8nxgw2tz7ch0000gp/T",
+    "npm_config_unsafe_perm": "true",
+    "COLORTERM": "truecolor",
+    "npm_config_format_package_lock": "true",
+    "npm_config_link": "",
+    "npm_config_prefix": "/Users/ayodev/.nvm/versions/node/v14.15.4",
+    "npm_node_execpath": "/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048575,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 1392,
+      "hard": 2088
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/ayodev/.nvm/versions/node/v14.15.4/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/liboah.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/System/Library/PrivateFrameworks/SoftLinking.framework/Versions/A/SoftLinking",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_collections.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_containermanager.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_product_info_filter.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib",
+    "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libenergytrace.dylib",
+    "/usr/lib/libbsm.0.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/system/libkxld.dylib"
+  ]
+}
