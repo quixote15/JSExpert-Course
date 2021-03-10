@@ -18,8 +18,8 @@
     "reify": "^0.20.12"
   },
   "scripts": {
-    "test": "npx mocha -w --parallel src/tests/*.test.js",
-    "test:cov": "npx nyc npx mocha -r reify --parallel src/tests/*.test.js",
+    "test": "npx mocha -w --parallel src/**/*.test.js",
+    "test:cov": "npx nyc npx mocha -r reify --parallel src/**/*.test.js",
     "dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules src/index.js"
   },
   "keywords": [],

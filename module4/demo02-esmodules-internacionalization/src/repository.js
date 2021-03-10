@@ -1,10 +1,21 @@
-import {writeFile, readFile} from 'fs/promises'
-export const save = async(data) => {
 
-  const {pathname: databaseFile} = new URL('./../database.json', import.meta.url);
+class terminalRepository {
+  constructor({fileAdapter, databaseFilePath}){
+    this.fileAdapter = fileAdapter;
+    const {pathname} = new URL(databaseFilePath, import.meta.url);
+    this.databaseFilePath = pathname;
+  }
 
-  const currentData = JSON.parse(await readFile(databaseFile));
+  async save(data) {
+    const currentData = await this.read();
+    currentData.push(data);
+    await this.fileAdapter.writeFile(this.databaseFilePath, JSON.stringify(currentData));
+  }
 
-  currentData.push(data);
-  await writeFile(databaseFile, JSON.stringify(currentData));
+  async read() {
+    const data = await this.fileAdapter.readFile();
+    return JSON.parse(data);
+  }
 }
+
+export default terminalRepository;
