@@ -1,8 +1,11 @@
 import TerminalController from './terminalController.js'
 import Person from './Person.js'
 import database from './../database.json'
-import {save} from './repository.js'
+import fileAdapter from 'fs/promises'
+import terminalRepository from './repository.js'
 
+const databaseFilePath = './../database.json';
+repository = new terminalRepository({fileAdapter, databaseFilePath});
 //const DEFAULT_LANG = "en"
 //const DEFAULT_LANG = "es"
 //const DEFAULT_LANG = "rus"
@@ -25,7 +28,7 @@ async function mainLoop() {
 
     const person = Person.generateInstanceFromString(answer);
     terminalController.updateTable(person.formatted(DEFAULT_LANG));
-    await save(person);
+    await repository.save(person);
     return mainLoop()
   } catch (error) {
     console.log('Deu ruim: ',error);

@@ -1,8 +1,8 @@
-import 'fs/promises';
-export default class terminalRepository {
+"use strict";module.export({default:()=>terminalRepository});
+class terminalRepository {
   constructor({fileAdapter, databaseFilePath}){
     this.fileAdapter = fileAdapter;
-    const {pathname: databasePath} = new URL(databaseFilePath, import.meta.url);
+   // const {pathname: databasePath} = new URL(databaseFilePath, import.meta.url);
     this.databaseFilePath = databasePath;
   }
 
