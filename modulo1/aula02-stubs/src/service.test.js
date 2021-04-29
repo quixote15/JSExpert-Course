@@ -1,4 +1,4 @@
-const Service = require('./service')
+\n\nconst Service = require('./service')
 const sinon = require('sinon')
 const { deepStrictEqual } = require('assert')
 const BASE_URL_1 = "https://swapi.dev/api/planets/1/"

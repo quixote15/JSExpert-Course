@@ -1,4 +1,4 @@
-import TerminalController from './terminalController.js'
+\n\nimport TerminalController from './terminalController.js'
 import Person from './Person.js'
 import database from './../database.json'
 import fileAdapter from 'fs/promises'

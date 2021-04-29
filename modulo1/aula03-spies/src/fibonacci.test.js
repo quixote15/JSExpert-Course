@@ -1,4 +1,4 @@
-const Fibonacci = require('./fibonacci')
+\n\nconst Fibonacci = require('./fibonacci')
 const sinon = require('sinon')
 const assert = require('assert')
 // Fibonacci: o próximo valor corresponde à soma dos dois anteriores

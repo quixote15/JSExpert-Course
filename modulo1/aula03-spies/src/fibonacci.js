@@ -1,4 +1,4 @@
-class Fibonacci {
+\n\nclass Fibonacci {
     *execute (input, current = 0, next = 1) {
         // console.count('execute!')
         if(input === 0) {

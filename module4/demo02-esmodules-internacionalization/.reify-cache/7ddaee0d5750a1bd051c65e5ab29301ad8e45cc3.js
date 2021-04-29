@@ -1,4 +1,4 @@
-"use strict";var mocha;module.link('mocha',{default(v){mocha=v}},0);var chai;module.link('chai',{default(v){chai=v}},1);var Person;module.link('../Person.js',{default(v){Person=v}},2);
+\n\n"use strict";var mocha;module.link('mocha',{default(v){mocha=v}},0);var chai;module.link('chai',{default(v){chai=v}},1);var Person;module.link('../Person.js',{default(v){Person=v}},2);
 
 
 

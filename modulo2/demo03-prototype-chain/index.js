@@ -1,4 +1,4 @@
-const assert = require('assert')
+\n\nconst assert = require('assert')
 const obj = {}
 const arr = []
 const fn = () => {}

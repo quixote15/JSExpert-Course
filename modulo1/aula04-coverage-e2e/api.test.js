@@ -1,4 +1,4 @@
-const { describe, it } = require('mocha')
+\n\nconst { describe, it } = require('mocha')
 const request = require('supertest')
 const app = require('./api')
 const assert = require('assert')

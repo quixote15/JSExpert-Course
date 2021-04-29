@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+\n\nimport chalk from 'chalk';
 import readline from 'readline';
 import DraftLog from 'draftlog';
 import chalkTable from 'chalk-table';

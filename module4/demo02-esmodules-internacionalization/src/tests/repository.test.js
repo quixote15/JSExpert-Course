@@ -1,4 +1,4 @@
-import mocha from 'mocha';
+\n\nimport mocha from 'mocha';
 import chai from 'chai'
 import sinon from 'sinon'
 import terminalRepository from '../repository.js';

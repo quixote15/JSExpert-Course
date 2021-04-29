@@ -1,4 +1,4 @@
-export default class Person {
+\n\nexport default class Person {
   constructor({id, vehicles, kmTraveled, from, to}) {
     this.id = id;
     this.vehicles = vehicles;

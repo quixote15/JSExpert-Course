@@ -1,4 +1,4 @@
-class Base {
+\n\nclass Base {
   constructor({id, name}) {
     this.id = id;
     this.name = name;

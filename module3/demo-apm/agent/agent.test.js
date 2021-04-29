@@ -1,4 +1,4 @@
-
+\n\n
 import debug from 'debug'
 const log = debug('agent:test')
 

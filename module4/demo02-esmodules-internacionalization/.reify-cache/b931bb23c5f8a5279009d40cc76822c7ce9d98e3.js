@@ -1,4 +1,4 @@
-"use strict";module.export({default:()=>terminalRepository});
+\n\n"use strict";module.export({default:()=>terminalRepository});
 class terminalRepository {
   constructor({fileAdapter, databaseFilePath}){
     this.fileAdapter = fileAdapter;

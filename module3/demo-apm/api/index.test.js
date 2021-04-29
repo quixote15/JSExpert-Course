@@ -1,4 +1,4 @@
-import debug from 'debug'
+\n\nimport debug from 'debug'
 const log = debug('app:test')
 
 import Http from './index.js'

@@ -1,4 +1,4 @@
-const {describe, it, before, beforeEach, afterEach} = require('mocha');
+\n\nconst {describe, it, before, beforeEach, afterEach} = require('mocha');
 const CarService = require('./../../src/service/carService');
 
 const {join} = require('path');

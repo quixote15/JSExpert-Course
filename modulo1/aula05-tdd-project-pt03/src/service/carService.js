@@ -1,4 +1,4 @@
-const BaseRepository = require('../entities/repository/base/baseRepository');
+\n\nconst BaseRepository = require('../entities/repository/base/baseRepository');
 
 class CarService {
   constructor({cars}) {

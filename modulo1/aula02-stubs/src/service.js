@@ -1,4 +1,4 @@
-const https = require('https')
+\n\nconst https = require('https')
 class Service {
     async makeRequest(url) {
         return new Promise((resolve, reject) => {

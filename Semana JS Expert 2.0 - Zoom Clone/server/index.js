@@ -1,4 +1,4 @@
-const server  = require('http').createServer((request, response) => {
+\n\nconst server  = require('http').createServer((request, response) => {
   response.writeHead(204, {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',

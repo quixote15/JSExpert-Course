@@ -1,4 +1,4 @@
-'use strict';
+\n\n'use strict';
 
 const { watch, promises: { readFile } } = require('fs')
 
