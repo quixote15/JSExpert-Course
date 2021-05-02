@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <img alt="GoStack" src="https://github.com/quixote15/JSExpert-Course/blob/main/assets/logo.png" width="120px" />
+  <img alt="GoStack" src="https://github.com/quixote15/JSExpert-Course/blob/main/assets/logo.png" width="300px" />
 </h1>
 
 <h3 align="center">
