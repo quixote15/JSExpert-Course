@@ -6,10 +6,12 @@ import ContextStrategy from './src/base/contextStrategy.js';
 // Para que toda strategy tenha a mesma assinatura da classe Context
 // Garantindo compatibilidade e definindo uma interface comum que todas as estrategias devem seguir.
 const postgresConnectionString = 'postgres://quixote15:senhasenha@159.65.246.147:5432/vilains';
+const mongodbConnectionString = 'mongodb://quixote15:senhamongo@159.65.246.147:27018/vilains';
 const postgresContext = new ContextStrategy(new PostgresStrategy(postgresConnectionString));
+const mongodbContext = new ContextStrategy(new MongoDBStrategy(mongodbConnectionString));
 
-await postgresContext.connect();
-
+await mongodbContext.connect();
+await postgresContext.connect()
 
 const data = [
   {
@@ -22,5 +24,15 @@ const data = [
   }
 ]
 
-await postgresContext.create({name: data[0].name})
-console.log(await postgresContext.read())
+const contextTypes = {
+  transaction: postgresContext,
+  activityLog: mongodbContext
+}
+
+for(const { type, name} of data) {
+  const context = contextTypes[type];
+  await context.create({name: name + Date.now()});
+
+  console.log(type, context.dbStrategy.constructor.name);
+  console.log(await context.read());
+}
