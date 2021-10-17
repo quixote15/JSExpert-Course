@@ -21,7 +21,7 @@ export default class $$componentNameFactory {
 }`
 
 export function factoryTemplate(componentName, repositoryName, serviceName) {
-    
+
     const txtFile = template
         .replaceAll(componentNameAnchor, Util.upperCaseFirstLetter(componentName))
         
