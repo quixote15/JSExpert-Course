@@ -1,4 +1,4 @@
-\n\n// Symbol é um tipo primitivo que foi adicionado em 2015 na linguagem
+// Symbol é um tipo primitivo que foi adicionado em 2015 na linguagem
 // Comum usar pra valores unicos (chaves de objetos ou nomes de funcao)
 // Usar para criar funcoes privadas em classes que nao devem ser acessadas diretamente
 // Podemos utilizar as propriedades de Symbol para interceptar o comportamento padrao de objetos

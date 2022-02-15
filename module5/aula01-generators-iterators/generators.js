@@ -1,4 +1,4 @@
-\n\n// Objetivo dos generators é fazer com que funcoes virem listas ?
+// Objetivo dos generators é fazer com que funcoes virem listas ?
 // Por que? Pra que ?
 // yield é equivalente a for await
 
