@@ -1,47 +1,49 @@
-\n\n 'use strict';
+"use strict";
 
-const Event = require('events')
-const event = new Event()
-const eventName = 'counter'
-const eventName2 = 'multiplier'
-event.on(eventName, msg => console.log('counter updated', msg))
-event.on(eventName2, msg => console.log('counter updated', msg.newValue * 10))
+const Event = require("events");
+const event = new Event();
+const eventName = "counter";
+const eventName2 = "multiplier";
+event.on(eventName, (msg) => console.log("counter updated", msg));
+event.on(eventName2, (msg) =>
+  console.log("counter updated", msg.newValue * 10)
+);
 
 const myCounter = {
-    counter: 0
-}
+  counter: 0,
+};
 const proxy = new Proxy(myCounter, {
-    set: (target, propertyKey, newValue) => {
-        event.emit(eventName2, { newValue, key: target[propertyKey] })
-        target[propertyKey] = newValue
-        return true
-    },
-    get: (object, prop) => {
-        // console.log('chamou!', { object, prop })
-        return object[prop]
-    }
-})
+  set: (target, propertyKey, newValue) => {
+    event.emit(eventName2, { newValue, key: target[propertyKey] });
+    target[propertyKey] = newValue;
+    return true;
+  },
+  get: (object, prop) => {
+    // console.log('chamou!', { object, prop })
+    return object[prop];
+  },
+});
 // jajÃ¡ e sempre!
 setInterval(function () {
-    proxy.counter += 1
-    console.log('[3]: setInterval')
-    if (proxy.counter === 10) clearInterval(this)
-}, 200)
+  proxy.counter += 1;
+  console.log("[3]: setInterval");
+  if (proxy.counter === 10) clearInterval(this);
+}, 200);
 
 // futuro
 setTimeout(() => {
-    proxy.counter = 4
-    console.log('[2]: timeout')
-}, 100)
+  proxy.counter = 4;
+  console.log("[2]: timeout");
+}, 100);
 
 // se quer que executa agora
 setImmediate(() => {
-    console.log('[1]: setImmediate', proxy.counter)
-})
+  console.log("[1]: setImmediate", proxy.counter);
+});
 
 // executa agora, agorinha, mas acaba com o ciclo de vida do node
 process.nextTick(() => {
-    proxy.counter = 2
-    proxy.counter = 2
-    console.log('[0]: nextTick')
-})
+  proxy.counter = 2;
+  proxy.counter = 2;
+  console.log("[0]: nextTick");
+});
