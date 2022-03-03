@@ -31,3 +31,24 @@ Tanto a classe Duplex quanto Transform são duplex streams. Ou seja, são Writea
 
 - Duplex: Possui os métodos `read` e `write` que agem de forma independente como se fossem instancias de streams diferentes
 - Transform: Age principalmente como uma Writeable stream porém é possível utilizar o método `push` presente nas Readable streams. Ao utilizar o `push` em um Transform o dado passado é simplementes repassado para frente.
+
+### Referencias
+
+https://www.slideshare.net/OdessaJSConf/andrii-shumada-use-cases-of-nodejs-streams
+https://erickwendel.com/talk/detail/5ee6b2452c16eb4db7e7b776
+https://github.com/maxogden/mississippi#duplex
+
+https://giphy.com
+https://www.electronjs.org/docs/api/desktop-capturer
+https://nodejs.org/es/docs/guides/backpressuring-in-streams/#lifecycle-of-pipe
+https://github.com/ErickWendel/nodejs-certification/blob/master/draft/index9.js
+https://devhints.io/nodejs-stream
+https://github.com/substack/stream-handbook
+
+https://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf
+https://nodejs.org/docs/
+https://nodejs.org/docs/v0.1.100/api.html
+https://medium.com/autodesk-tlv/streams-in-depth-in-node-js-c8cc7f1eb0d6
+http://codewinds.com/blog/2013-08-31-nodejs-duplex-streams.html#what_is_a_duplex_stream_
+https://stackoverflow.com/questions/18335499/nodejs-whats-the-difference-between-a-duplex-stream-and-a-transform-stream
+https://nodejs.org/api/stream.html
