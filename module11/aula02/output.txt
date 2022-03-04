@@ -1,0 +1,1 @@
+Estou escrevendo coisas na stream responseTudo que eu escrevo nessa writeable stream vai aparecertudo mesmocada chamada dessa ao metodo write vai ser escrita na streamsão os chunks de nossa stream aquiesses chunks eu to escrevendo manualmenteno caso da stream de request isso tá sendo feito automáticamente pelo pipeno final irão aparecer todos os dados escritos na stream
