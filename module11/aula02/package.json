@@ -5,9 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "mkdir -p logs && node webapi.js",
+    "api1": "curl localhost:3000 | tee logs/api1.log",
+    "api2": "curl localhost:4000 | tee logs/ap1.log",
+    "example01": "node examples/1.concat-streams.pass-through.js | tee logs/example01.log"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
 }
