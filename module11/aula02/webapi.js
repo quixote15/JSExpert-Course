@@ -67,7 +67,7 @@ const handlerTwo = async (req, res) => {
           this.push(
             JSON.stringify({
               id: Date.now() + count,
-              name: `Zezinho-${count}`,
+              name: `Zezin-${count}`,
             }) + "\n"
           );
           return;
