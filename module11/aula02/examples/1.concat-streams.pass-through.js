@@ -59,7 +59,7 @@ function merge(streams) {
     current.on("end", () => items.every((s) => s.ended) && prev.end());
 
     return prev;
-  }, new MyCustomPassThrough() /* Ou new PassThrough()*/);
+  }, PassThrough() /* Ou new PassThrough()*/);
 }
 
 const streams = merge(myApiStreamResults).pipe(myWritableOutputStream);
