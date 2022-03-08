@@ -3,4 +3,4 @@ IMAGE_URL="https://static3.tcdn.com.br/img/img_prod/460977/boneco_tracker_predat
 BACKGROUND_URL="https://i.ytimg.com/vi/LTqV4Bfhelc/maxresdefault.jpg"
 curl "http://localhost:3000/joinImages?img=$IMAGE_URL&background=$BACKGROUND_URL"
 
-autocannon --renderStatusCodes -c500 "http://localhost:3000/joinImages?img=$IMAGE_URL&background=$BACKGROUND_URL"
+autocannon --renderStatusCodes -c300 "http://localhost:3000/joinImages?img=$IMAGE_URL&background=$BACKGROUND_URL"
